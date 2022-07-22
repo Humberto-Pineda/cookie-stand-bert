@@ -32,10 +32,6 @@ footer {
   width: 1000px;
 }
 
-h2 {
-  font-size: 3rem;
-}
-
 li {
   display: flex;
   flex-direction: row;

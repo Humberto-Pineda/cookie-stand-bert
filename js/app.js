@@ -60,7 +60,7 @@ lima.render();
 let tableFoot = document.querySelector('tfoot');
 let newTableRow = document.createElement('tr');
 tableFoot.appendChild(newTableRow);
-let totalRowTitle = document.createElement('td');
+let totalRowTitle = document.createElement('tf');
 totalRowTitle.textContent = 'Hourly Total';
 newTableRow.appendChild(totalRowTitle);
 
@@ -77,17 +77,17 @@ newTableRow.appendChild(grandTotals);
 let tableHead = document.querySelector('thead');
 let topTableRow = document.createElement('tr');
 tableHead.appendChild(topTableRow);
-let hoursRow = document.createElement('td');
+let hoursRow = document.createElement('th');
 hoursRow.textContent = 'Store Hours';
 topTableRow.appendChild(hoursRow);
 
 for (let i = 0; i < storeHours.length; i++) {
-  let everyHourRow = document.createElement('td');
+  let everyHourRow = document.createElement('th');
   everyHourRow.textContent = storeHours[i];
   topTableRow.appendChild(everyHourRow);
 }
 
-let cityGrandTotals = document.createElement('td');
+let cityGrandTotals = document.createElement('th');
 cityGrandTotals.textContent = 'Daily Location Totals';
 topTableRow.appendChild(cityGrandTotals);
 
@@ -95,10 +95,13 @@ let form = document.querySelector('form');
 
 function handleSubmit(event) {
   event.preventDefault();
-  let CityName = new CookieCity(event.target.CityName.value, parseInt(event.target.MaximumTotal.value), parseInt(event.target.MinimumTotal.value), parseInt(event.target.AvgPerPerson.value));
+  let CityName = new CookieCity(
+    event.target.CityName.value,
+    +event.target.MaximumTotal.value,
+    +event.target.MinimumTotal.value,
+    +event.target.AvgPerPerson.value);
   CityName.render();
 }
 
 form.addEventListener('submit', handleSubmit);
 
-// adding to submit to class9
