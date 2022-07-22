@@ -3,34 +3,40 @@ table, td, th {
 }
 
 header {
-  background-color: aqua;
-  margin-bottom: 30px;
+  border-style: color black solid; 
+  height: 200px;
+  width: 1000px;
 }
 
-header nav {
-  width: 960px;
-  margin: auto;
+header a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: darkolivegreen;
 }
 
+header img {
+  height: 100px;
+  display: flex;
+  flex-direction:initial
+}
 
 main {
-  background-color: cornflowerblue;
-  width: 960px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-main img {
-  margin-bottom: 30px;
+  background-color: darkgoldenrod;
+  height: 500px;
+  width: 1000px;
 }
 
 footer {
-  background-color: darkkhaki;
+  background-color: burlywood;
+  height: 300px;
+  width: 1000px;
 }
 
-footer nav {
-  width: 960px;
-  margin: auto;
+h2 {
+  font-size: 3rem;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
 }
