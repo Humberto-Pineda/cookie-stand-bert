@@ -90,3 +90,13 @@ for (let i = 0; i < storeHours.length; i++) {
 let cityGrandTotals = document.createElement('td');
 cityGrandTotals.textContent = 'Daily Location Totals';
 topTableRow.appendChild(cityGrandTotals);
+
+let form = document.querySelector('form');
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let CityName = new CookieCity(event.target.CityName.value, parseInt(event.target.MaximumTotal.value), parseInt(event.target.MinimumTotal.value), parseInt(event.target.AvgPerPerson.value));
+  CityName.render();
+}
+
+form.addEventListener('submit', handleSubmit);
