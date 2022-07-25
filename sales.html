@@ -6,30 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sales Salmon Cookies</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-
+    <nav>
+      <a href="index.html">
+      <img src="img/salmon.jpg" alt="A Single Salmon">
+      </a>
+        <div>
+        <h2>Pat's Salmon Cookies</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sales.html">Sales</a></li>
+        </div>  
+        </ul>
+    </nav>
   </header>
   <main>
+    <div id="shirt">
     <aside>
-      <form>
+      <form id="form">
       <fieldset>
-        <legend>Add Location</legend>
+        <legend>Add Location:</legend><br>
         <!-- name, min, max, avg -->
-        <label>Location Name:
-          <input type="text" name="CityName">
-        </label>
-        <label>Min Cookies Sold:
-          <input type="number" name="MinumumTotal">
-        </label>
-        <label>Max Cookies Sold:
-          <input type="number" name="MaximumTotal">
-        </label>
-        <label>Avg Cookies sold per Customer:
-          <input type="number" name="AvgPerPerson">
-        </label>
+        <label>Location Name:<br>
+          <input type="text" name="CityName" required>
+        </label> <br><br>
+        <label>Min Cookies Sold:<br>
+          <input type="number" name="MinumumTotal" required>
+        </label><br><br>
+        <label>Max Cookies Sold:<br>
+          <input type="number" name="MaximumTotal" required>
+        </label><br><br>
+        <label>Avg Cookies sold per Customer:<br>
+          <input type="number" name="AvgPerPerson" required>
+        </label><br><br>
         <button type="submit">Add Cookie Store</button>
       </fieldset>
       </form>
@@ -45,6 +62,8 @@
         
       </tfoot>
     </table>
+    <img id=tshirt src="img/salmon tshirt.jpg" alt="shirt with salmon picture">
+    </div> 
   </main>
   <footer>
 

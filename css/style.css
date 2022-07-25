@@ -1,42 +1,118 @@
 table, td, th {
-  border: 1px solid black;
+  margin-left: 30px;
+  margin-top: 10px;
+  border: 3px solid black;
+  font-size: 20px;
+  font-weight: 600;
+  height: 100px;
+  width: 250px;
+}
+
+#tshirt {
+  height: 500px;
+  width: 400px;
+  margin-top: 60px;
+  padding-top: 60px;
+  margin-left: 60px;
+  padding-left: 60px;
+}
+
+legend {
+  font-size: 25px;
+}
+
+label, button {
+  font-size: 20px;
 }
 
 header {
-  border-style: color black solid; 
-  height: 200px;
-  width: 1000px;
+  height: 170px;
+  width: 100%;
 }
 
 header a {
-  font-size: 2rem;
+  margin-left: 100px;
+  font-size: 3rem;
   text-decoration: none;
   color: darkolivegreen;
+  width: max-content;
 }
 
 header img {
-  height: 100px;
+  height: 150px;
   display: flex;
   flex-direction:initial
 }
 
 main {
-  background-color: darkgoldenrod;
-  height: 500px;
-  width: 1000px;
+  background-color:rgb(46, 219, 219);
+  height: 1000px;
+  width: 100%;
 }
 
 footer {
-  background-color: burlywood;
-  height: 300px;
-  width: 1000px;
+  height: 100px;
+  width: 100%;
 }
 
 h2 {
-  font-size: 3rem;
+  margin-left: 160px;
+  padding-left: 160px;
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 60px   ;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+div ul {
+  display: flex;
+  flex-direction: row;
 }
 
 li {
-  display: flex;
-  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#aboutus {
+  font-size: 30px;
+}
+
+#locations {
+  margin-top: 30px;
+  font-size: 35px;
+  columns: 2;  
+}
+
+section ul {
+  display: flex
+}
+
+#cutter {
+  height: 400px;
+  width: 400px;
+}
+
+#frosted {
+  height: 350px;
+  width: 500px;
+}
+
+#shirt {
+  padding-top: 60px;
+  margin-left: 30px;
+  display: flex; 
+}
+
+#anime {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
