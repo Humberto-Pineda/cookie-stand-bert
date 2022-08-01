@@ -59,10 +59,14 @@ h2 {
   margin-left: 160px;
   padding-left: 160px;
   font-size: 5rem;
+  color:goldenrod
 }
 
 h3 {
   font-size: 60px   ;
+  font-family: 'Courier New', Courier, monospace;
+  color:brown;
+  font-weight: 600;
 }
 
 nav {
@@ -115,4 +119,13 @@ section ul {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+#form {
+  font-family: sans-serif;
+}
+
+button {
+  background-color: green;
+  color: white;
 }
